@@ -247,7 +247,7 @@ export const saveSummaryAndGenerateTagsFn = createServerFn({
         }
 
         const { text } = await generateText({
-            model: openrouter.chat("xiaomi/mimo-v2-flash:free"),
+            model: openrouter.chat("arcee-ai/trinity-large-preview:free"),
             system: `You are a helpful assistant that extracts relevant tags from content summaries.
             Extract 3-5 short, relevant tags that categorize the content.
             Return ONLY a comma-separated list of tags, nothing else.
